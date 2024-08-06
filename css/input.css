@@ -26,9 +26,17 @@
   }
 
   .flex-wrap-container {
-    @apply flex flex-col xl:flex-row flex-wrap; /* Allow wrapping and adjust flex direction */
+    @apply flex flex-row xl:flex-row; 
   }
   
-  .p-flex-item {
-    @apply w-full xl:w-auto; /* Ensure it takes full width on smaller screens */
+  .flex-wrap-container span {
+    @apply inline-flex font-bold font-outfit text-color-stone-dark xl:w-auto xl:inline-flex;
+  }
+  
+  
+  .flex-wrap-container p {
+    @apply font-outfit text-base xl:ml-2 xl:mt-0; 
+    @apply flex-grow; 
+    overflow-wrap: break-word; 
+    /* white-space: pre-wrap;  */
   }
