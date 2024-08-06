@@ -26,11 +26,11 @@
   }
 
   .flex-wrap-container {
-    @apply flex flex-row xl:flex-row; 
+    @apply flex flex-row xl:flex-row gap-x-0.5; 
   }
   
   .flex-wrap-container span {
-    @apply inline-flex font-bold font-outfit text-color-stone-dark xl:w-auto xl:inline-flex;
+    @apply inline-flex font-bold font-outfit text-color-stone-dark xl:w-auto xl:inline-flex whitespace-nowrap;
   }
   
   
@@ -38,5 +38,4 @@
     @apply font-outfit text-base xl:ml-2 xl:mt-0; 
     @apply flex-grow; 
     overflow-wrap: break-word; 
-    /* white-space: pre-wrap;  */
   }

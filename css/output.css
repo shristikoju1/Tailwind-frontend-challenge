@@ -1082,11 +1082,18 @@ video {
 .justify-around {
   justify-content: space-around;
 }
+.gap-0 {
+  gap: 0px;
+}
 .gap-1 {
   gap: 0.25rem;
 }
 .gap-5 {
   gap: 1.25rem;
+}
+.gap-x-0 {
+  -moz-column-gap: 0px;
+       column-gap: 0px;
 }
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
@@ -1097,6 +1104,9 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
+}
+.whitespace-nowrap {
+  white-space: nowrap;
 }
 .rounded-full {
   border-radius: 9999px;
@@ -1304,6 +1314,8 @@ video {
 .flex-wrap-container {
   display: flex;
   flex-direction: row;
+  -moz-column-gap: 0.125rem;
+       column-gap: 0.125rem;
 }
 @media (min-width: 1280px) {
 
@@ -1313,6 +1325,7 @@ video {
 }
 .flex-wrap-container span {
   display: inline-flex;
+  white-space: nowrap;
   font-family: Outfit, sans-serif;
   font-weight: 700;
   --tw-text-opacity: 1;
@@ -1339,8 +1352,7 @@ video {
 }
 .flex-wrap-container p {
   flex-grow: 1; 
-    overflow-wrap: break-word; 
-    /* white-space: pre-wrap;  */
+    overflow-wrap: break-word;
 }
 @media (min-width: 1280px) {
 
@@ -1348,11 +1360,15 @@ video {
     margin-left: 0.5rem;
   }
 
-  .xl\:mt-0 {
-    margin-top: 0px;
+  .xl\:inline-flex {
+    display: inline-flex;
   }
 
   .xl\:w-auto {
     width: auto;
+  }
+
+  .xl\:flex-row {
+    flex-direction: row;
   }
 }
